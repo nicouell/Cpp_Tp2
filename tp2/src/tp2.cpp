@@ -15,9 +15,6 @@ using namespace util;
 int main() {
 
 	Client nicola(5000, "Joe", "Blo", "418 656-2131");
-	Date dateClient(19, 10, 1994);
-	cout << dateClient.reqDateFormatee() << endl;
-	nicola.asgDateOuverture(dateClient);
 	cout << nicola.reqClientFormate() << endl;
 
 	return 0;

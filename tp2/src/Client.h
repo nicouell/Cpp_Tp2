@@ -15,7 +15,6 @@
 
 class Client {
 public:
-	Client();
 	Client(int p_noFolio, const std::string& p_nom, const std::string& p_prenom, const std::string& p_telephone);
 
 	int reqNoFolio();

@@ -11,13 +11,6 @@
 
 using namespace std;
 
-Client::Client() {
-	m_noFolio = 0000;
-	m_nom = "nnn";
-	m_prenom = "ppp";
-	m_telephone = "000 000-0000";
-}
-
 Client::Client(int p_noFolio, const std::string& p_nom,
 		const std::string& p_prenom, const std::string& p_telephone) {
 	m_noFolio = p_noFolio;

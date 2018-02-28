@@ -763,3 +763,22 @@ Command-line arguments:  -os linux -ws gtk -arch x86 -product org.eclipse.epp.pa
 
 !ENTRY net.sourceforge.vrapper.eclipse 1 0 2018-02-28 10:04:00.772
 !MESSAGE No .vrapperrc or _vrapperrc found.
+!SESSION 2018-02-28 16:58:53.281 -----------------------------------------------
+eclipse.buildId=4.5.2.M20160212-1500
+java.version=1.8.0_111
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=fr_CA
+Framework arguments:  -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os linux -ws gtk -arch x86 -product org.eclipse.epp.package.cpp.product -data .
+
+!ENTRY net.sourceforge.vrapper.eclipse 1 0 2018-02-28 16:59:09.889
+!MESSAGE No .vrapperrc or _vrapperrc found.
+
+!ENTRY net.sourceforge.vrapper.eclipse 1 0 2018-02-28 16:59:31.339
+!MESSAGE No .vrapperrc or _vrapperrc found.
+
+!ENTRY net.sourceforge.vrapper.eclipse 1 0 2018-02-28 17:02:47.565
+!MESSAGE No .vrapperrc or _vrapperrc found.
+
+!ENTRY net.sourceforge.vrapper.eclipse 1 0 2018-02-28 17:03:13.551
+!MESSAGE No .vrapperrc or _vrapperrc found.
