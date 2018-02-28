@@ -1,19 +1,51 @@
-16:59:54 **** Incremental Build of configuration Debug for project tp2 ****
+17:33:16 **** Incremental Build of configuration Debug for project tp2 ****
 make all 
-Building file: ../src/tp2.cpp
+Building file: ../src/Client.cpp
 Invoking: GCC C++ Compiler
-g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tp2.d" -MT"src/tp2.o" -o "src/tp2.o" "../src/tp2.cpp"
-../src/tp2.cpp: In function ‘int main()’:
-../src/tp2.cpp:17:2: error: ‘nicola’ was not declared in this scope
-  nicola.asgDateOuverture(dateClient);
-  ^
-../src/tp2.cpp:17:26: error: ‘dateClient’ was not declared in this scope
-  nicola.asgDateOuverture(dateClient);
-                          ^
-src/subdir.mk:27 : la recette pour la cible « src/tp2.o » a échouée
-make: *** [src/tp2.o] Erreur 1
-17:00:08 **** Incremental Build of configuration Debug for project tp2 ****
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Client.d" -MT"src/Client.o" -o "src/Client.o" "../src/Client.cpp"
+../src/Client.cpp: In member function ‘bool Client::operator==(const Client&)’:
+../src/Client.cpp:53:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+../src/Client.cpp: In member function ‘bool Client::operator<(const Client&)’:
+../src/Client.cpp:56:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+Finished building: ../src/Client.cpp
+ 
+Building target: tp2
+Invoking: GCC C++ Linker
+g++  -o "tp2"  ./src/Client.o ./src/Date.o ./src/tp2.o ./src/validationFormat.o   
+Finished building target: tp2
+ 
+17:33:20 **** Incremental Build of configuration Debug for project tp2 ****
 make all 
+make: rien à faire pour « all ».
+17:59:04 **** Incremental Build of configuration Debug for project tp2 ****
+make all 
+Building file: ../src/Client.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Client.d" -MT"src/Client.o" -o "src/Client.o" "../src/Client.cpp"
+../src/Client.cpp:59:6: error: prototype for ‘bool Client::operator<(const Client&)’ does not match any in class ‘Client’
+ bool Client::operator <(const Client& p_client) {
+      ^
+In file included from ../src/Client.cpp:8:0:
+../src/Client.h:34:7: error: candidate is: bool Client::operator<(const Client&) const
+  bool operator<(const Client& p_client) const;
+       ^
+src/subdir.mk:27 : la recette pour la cible « src/Client.o » a échouée
+make: *** [src/Client.o] Erreur 1
+17:59:21 **** Incremental Build of configuration Debug for project tp2 ****
+make all 
+Building file: ../src/Client.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Client.d" -MT"src/Client.o" -o "src/Client.o" "../src/Client.cpp"
+../src/Client.cpp: In member function ‘bool Client::operator<(const Client&) const’:
+../src/Client.cpp:60:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+Finished building: ../src/Client.cpp
+ 
 Building file: ../src/tp2.cpp
 Invoking: GCC C++ Compiler
 g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tp2.d" -MT"src/tp2.o" -o "src/tp2.o" "../src/tp2.cpp"

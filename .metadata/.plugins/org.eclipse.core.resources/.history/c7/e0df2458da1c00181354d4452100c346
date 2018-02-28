@@ -30,8 +30,8 @@ public:
 
 	std::string reqClientFormate();
 
-	bool operator==(const Client& p_client) const;
-	bool operator<(const Client& p_client) const;
+	bool operator==(const Client& p_client);
+	bool operator<(const Client& p_client);
 
 
 

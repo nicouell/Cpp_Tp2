@@ -50,11 +50,8 @@ std::string Client::reqClientFormate() {
 }
 
 bool Client::operator ==(const Client& p_client) const {
-	if (m_noFolio == p_client.m_noFolio && m_nom == p_client.m_nom && m_prenom == p_client.m_prenom && m_dateOuverture == p_client.m_dateOuverture && m_telephone == p_client.m_telephone)
-		return true;
-	else
-		return false;
+	if (m_noFolio == p_client.m_noFolio && )
 }
 
-bool Client::operator <(const Client& p_client) const{
+bool Client::operator <(const Client& p_client) {
 }

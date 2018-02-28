@@ -18,20 +18,24 @@ public:
 	Client(int p_noFolio, const std::string& p_nom, const std::string& p_prenom, const std::string& p_telephone);
 
 	int reqNoFolio();
+	void asgNoFolio(int p_noFolio);
 
 	std::string reqNom() const;
+	void asgNom(std::string& p_nom);
 
 	std::string reqPrenom() const;
+	void asgPrenom(std::string& p_prenom);
 
 	util::Date reqDateOuverture() const;
+	void asgDateOuverture(util::Date);
 
 	std::string reqTelephone() const;
 	void asgTelephone(std::string& p_telephone);
 
 	std::string reqClientFormate();
 
-	bool operator==(const Client& p_client) const;
-	bool operator<(const Client& p_client) const;
+	bool operator==(const Client& p_client);
+	bool operator<(const Client& p_client);
 
 
 

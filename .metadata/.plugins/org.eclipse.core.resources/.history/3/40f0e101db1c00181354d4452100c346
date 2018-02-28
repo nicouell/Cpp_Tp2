@@ -56,5 +56,5 @@ bool Client::operator ==(const Client& p_client) const {
 		return false;
 }
 
-bool Client::operator <(const Client& p_client) const{
+bool Client::operator <(const Client& p_client) {
 }
