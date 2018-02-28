@@ -9,10 +9,12 @@
 #include <iostream>
 #include "Client.h"
 using namespace std;
+using namespace util;
 
 int main() {
 
-	Client nicola();
+	Client nicola(5000, "Joe", "Blo", "418 656-2131");
+	cout << nicola.reqClientFormate() << endl;
 
 	return 0;
 }

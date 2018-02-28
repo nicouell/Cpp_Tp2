@@ -1,32 +1,6 @@
-10:42:56 **** Incremental Build of configuration Debug for project tp2 ****
+11:07:19 **** Incremental Build of configuration Debug for project tp2 ****
 make all 
-Building file: ../src/Client.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Client.d" -MT"src/Client.o" -o "src/Client.o" "../src/Client.cpp"
-../src/Client.cpp: In member function ‘std::__cxx11::string Client::reqClientFormate()’:
-../src/Client.cpp:72:1: warning: no return statement in function returning non-void [-Wreturn-type]
- }
- ^
-../src/Client.cpp: In member function ‘bool Client::operator==(const Client&)’:
-../src/Client.cpp:75:1: warning: no return statement in function returning non-void [-Wreturn-type]
- }
- ^
-../src/Client.cpp: In member function ‘bool Client::operator<(const Client&)’:
-../src/Client.cpp:78:1: warning: no return statement in function returning non-void [-Wreturn-type]
- }
- ^
-Finished building: ../src/Client.cpp
- 
-Building file: ../src/tp2.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tp2.d" -MT"src/tp2.o" -o "src/tp2.o" "../src/tp2.cpp"
-Finished building: ../src/tp2.cpp
- 
-Building target: tp2
-Invoking: GCC C++ Linker
-g++  -o "tp2"  ./src/Client.o ./src/Date.o ./src/tp2.o ./src/validationFormat.o   
-Finished building target: tp2
- 
+make: rien à faire pour « all ».
 
-10:42:57 Build Finished (took 581ms)
+11:07:19 Build Finished (took 67ms)
 

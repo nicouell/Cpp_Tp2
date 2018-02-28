@@ -6,6 +6,8 @@
  */
 
 #include "Client.h"
+#include <iostream>
+#include <sstream>
 
 using namespace std;
 
@@ -69,6 +71,12 @@ void Client::asgTelephone(std::string& p_telephone) {
 }
 
 std::string Client::reqClientFormate() {
+	ostringstream os;
+	os << "Client no de folio: " << reqNoFolio() << endl;
+	os << reqPrenom() << " " << reqNom() << endl;
+	os << reqTelephone() << endl;
+	os << "Date d'ouverture: " << reqDateOuverture() << endl;
+	return os.str();
 }
 
 bool Client::operator ==(const Client& p_client) {
