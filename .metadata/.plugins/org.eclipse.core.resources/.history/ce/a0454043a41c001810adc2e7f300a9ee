@@ -16,6 +16,7 @@ Client::Client() {
 	m_nom = "nnn";
 	m_prenom = "ppp";
 	m_telephone = "000 000-0000";
+	m_dateOuverture = util::Date();
 }
 
 Client::Client(int p_noFolio, const std::string& p_nom,
