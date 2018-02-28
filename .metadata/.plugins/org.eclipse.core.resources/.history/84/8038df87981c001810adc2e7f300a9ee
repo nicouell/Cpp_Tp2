@@ -7,12 +7,10 @@
 //============================================================================
 
 #include <iostream>
-#include "Client.h"
 using namespace std;
 
 int main() {
-
-	Client nicola();
-
+	cout << "!!!Hello World!!!" << endl; // prints !!!Hello World!!!
+	string nom;
 	return 0;
 }
