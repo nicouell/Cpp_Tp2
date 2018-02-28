@@ -1,4 +1,4 @@
-10:17:59 **** Incremental Build of configuration Debug for project tp2 ****
+10:42:56 **** Incremental Build of configuration Debug for project tp2 ****
 make all 
 Building file: ../src/Client.cpp
 Invoking: GCC C++ Compiler
@@ -28,5 +28,5 @@ g++  -o "tp2"  ./src/Client.o ./src/Date.o ./src/tp2.o ./src/validationFormat.o
 Finished building target: tp2
  
 
-10:18:00 Build Finished (took 625ms)
+10:42:57 Build Finished (took 581ms)
 

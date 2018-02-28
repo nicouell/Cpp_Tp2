@@ -54,8 +54,8 @@ util::Date Client::reqDateOuverture() const {
 	return m_dateOuverture;
 }
 
-void Client::asgDateOuverture() {
-	m_dateOuverture = util::Date();
+void Client::asgDateOuverture(util::Date p_date) {
+	m_dateOuverture = p_date;
 }
 
 std::string Client::reqTelephone() const {

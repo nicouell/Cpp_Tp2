@@ -28,7 +28,7 @@ public:
 	void asgPrenom(std::string& p_prenom);
 
 	util::Date reqDateOuverture() const;
-	void asgDateOuverture();
+	void asgDateOuverture(util::Date);
 
 	std::string reqTelephone() const;
 	void asgTelephone(std::string& p_telephone);
