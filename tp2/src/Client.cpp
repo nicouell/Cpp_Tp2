@@ -1,8 +1,11 @@
-/*
- * Client.cpp
- *
- *  Created on: 2018-02-21
- *      Author: etudiant
+/**
+ * \file Client.cpp
+ * \brief Implantation de la classe Client
+ *        revision : normes 03-2013
+ *        balises Doxygen
+ * \author Nicola Ouellet Version initiale
+ * \date 28 fevrier 2018
+ * \version 1.0 sans contrat
  */
 
 #include "Client.h"
@@ -11,6 +14,16 @@
 
 using namespace std;
 namespace banque{
+
+/**
+ * \brief constructeur avec parametres
+ * 		  On construit un objet Client à partir de valeurs passées en parametres.
+ * \param[in] p_noFolio est un entier int qui représente le numéro de folio.
+ * \param[in] p_nom est une chaine de carachtère string qui représente le nom du client.
+ * \param[in] p_prenom est une chaine de carachtère string qui représente le prénom du client.
+ * \param[in] p_telephone est une chaine de carachtère string qui représente le numéro de téléphone du client.
+ */
+
 
 Client::Client(int p_noFolio, const std::string& p_nom,
 		const std::string& p_prenom, const std::string& p_telephone):m_noFolio(p_noFolio), m_nom(p_nom), m_prenom(p_prenom), m_telephone(p_telephone)
@@ -21,6 +34,10 @@ int Client::reqNoFolio() {
 	return m_noFolio;
 }
 
+/**
+ * \brief ofsjifs
+ * \return
+ */
 std::string Client::reqNom() const {
 	return m_nom;
 }
