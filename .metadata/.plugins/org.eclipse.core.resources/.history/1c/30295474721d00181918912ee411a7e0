@@ -30,51 +30,25 @@ Client::Client(int p_noFolio, const std::string& p_nom,
 {
 }
 
-/**
- * \brief retourne le numéro correspondant au numéro de folio du client
- * \return un entier int qui représente le numéro de folio du client
- */
-
-
 int Client::reqNoFolio() {
 	return m_noFolio;
 }
 
 /**
- * \brief retourne le nom correspondant au nom du client
- * \return une chaine de carachtère string qui représente le nom du client.
+ * \brief ofsjifs
+ * \return
  */
-
-
 std::string Client::reqNom() const {
 	return m_nom;
 }
-
-/**
- * \brief retourne le prenom correspondant au prenom du client
- * \return une chaine de carachtère string qui représente le prenom du client.
- */
-
 
 std::string Client::reqPrenom() const {
 	return m_prenom;
 }
 
-/**
- * \brief retourne une date correspondant a la date d'ouverture du dossié
- * \return un objet Date qui représente la date d'ouverture du dossié.
- */
-
-
 util::Date Client::reqDateOuverture() const {
 	return m_dateOuverture;
 }
-
-/**
- * \brief retourne le numéro de téléphone correspondant au numéro de téléphone du client
- * \return une chaine de carachtère string qui représente le numéro de téléphone du client.
- */
-
 
 std::string Client::reqTelephone() const {
 	return m_telephone;

@@ -15,11 +15,6 @@
 #define CLIENT_H_
 
 namespace banque{
-/**
- * \class Client
- * \brief Cette classe sert au maintien et à la manipulation des clients.
- */
-
 
 class Client {
 public:

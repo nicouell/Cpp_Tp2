@@ -1,11 +1,9 @@
-/**
- * \file Client.h
- * \brief Fichier qui contient l'interface de la classe Date qui sert au maintien et � la manipulation des dates.
- * \author Nicola Ouellet Version initiale
- * \date 28 fevrier 2018
- * \version 1.0 sans contrat
+/*
+ * Client.h
+ *
+ *  Created on: 2018-02-21
+ *      Author: etudiant
  */
-
 
 #include <iostream>
 #include "Date.h"
@@ -15,11 +13,6 @@
 #define CLIENT_H_
 
 namespace banque{
-/**
- * \class Client
- * \brief Cette classe sert au maintien et à la manipulation des clients.
- */
-
 
 class Client {
 public:

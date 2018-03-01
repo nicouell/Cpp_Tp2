@@ -30,51 +30,25 @@ Client::Client(int p_noFolio, const std::string& p_nom,
 {
 }
 
-/**
- * \brief retourne le numéro correspondant au numéro de folio du client
- * \return un entier int qui représente le numéro de folio du client
- */
-
-
 int Client::reqNoFolio() {
 	return m_noFolio;
 }
 
 /**
- * \brief retourne le nom correspondant au nom du client
- * \return une chaine de carachtère string qui représente le nom du client.
+ * \brief ofsjifs
+ * \return
  */
-
-
 std::string Client::reqNom() const {
 	return m_nom;
 }
-
-/**
- * \brief retourne le prenom correspondant au prenom du client
- * \return une chaine de carachtère string qui représente le prenom du client.
- */
-
 
 std::string Client::reqPrenom() const {
 	return m_prenom;
 }
 
-/**
- * \brief retourne une date correspondant a la date d'ouverture du dossié
- * \return un objet Date qui représente la date d'ouverture du dossié.
- */
-
-
 util::Date Client::reqDateOuverture() const {
 	return m_dateOuverture;
 }
-
-/**
- * \brief retourne le numéro de téléphone correspondant au numéro de téléphone du client
- * \return une chaine de carachtère string qui représente le numéro de téléphone du client.
- */
-
 
 std::string Client::reqTelephone() const {
 	return m_telephone;
@@ -105,26 +79,12 @@ std::string Client::reqClientFormate() {
 	return os.str();
 }
 
-/**
- * \brief surcharge de l'opérateur ==
- * \param[in] p_client qui est un client valide
- * \return un booléen indiquant si tous les paramètre sont égales ou pas
- */
-
-
 bool Client::operator ==(const Client& p_client) const {
 	if (m_noFolio == p_client.m_noFolio && m_nom == p_client.m_nom && m_prenom == p_client.m_prenom && m_dateOuverture == p_client.m_dateOuverture && m_telephone == p_client.m_telephone)
 		return true;
 	else
 		return false;
 }
-
-/**
- * \brief surcharge de l'opérateur <
- * \param[in] p_client qui est un client valide
- * \return un booléen indiquant si le numéro de folio passé en paramètre est plus petit qu'un autre.
- */
-
 
 bool Client::operator <(const Client& p_client) const{
 	return m_noFolio < p_client.m_noFolio;

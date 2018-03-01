@@ -819,3 +819,12 @@ Command-line arguments:  -os linux -ws gtk -arch x86 -product org.eclipse.epp.pa
 
 !ENTRY net.sourceforge.vrapper.eclipse 1 0 2018-03-01 11:35:17.303
 !MESSAGE No .vrapperrc or _vrapperrc found.
+
+!ENTRY net.sourceforge.vrapper.eclipse 1 0 2018-03-01 11:56:01.658
+!MESSAGE No .vrapperrc or _vrapperrc found.
+
+!ENTRY net.sourceforge.vrapper.eclipse 1 0 2018-03-01 12:03:35.598
+!MESSAGE No .vrapperrc or _vrapperrc found.
+
+!ENTRY net.sourceforge.vrapper.eclipse 1 0 2018-03-01 12:03:58.697
+!MESSAGE No .vrapperrc or _vrapperrc found.
