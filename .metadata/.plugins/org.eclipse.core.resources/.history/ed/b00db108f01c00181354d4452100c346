@@ -93,7 +93,7 @@ int main() {
 	getline(cin, telephone);
 
 	cout << "Fichier client" << endl;
-	cout << "-----------------------------------" << endl;
+	cout << "-----------------------------------";
 
 	nicola.asgTelephone(telephone);
 	cout << nicola.reqClientFormate() << endl;

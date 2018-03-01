@@ -1,51 +1,94 @@
-17:33:16 **** Incremental Build of configuration Debug for project tp2 ****
+19:58:13 **** Clean-only build of configuration Debug for project tp2 ****
+make clean 
+rm -rf  ./src/Client.o ./src/Date.o ./src/tp2.o ./src/validationFormat.o  ./src/Client.d ./src/Date.d ./src/tp2.d ./src/validationFormat.d  tp2
+ 
+19:58:16 **** Build of configuration Debug for project tp2 ****
 make all 
 Building file: ../src/Client.cpp
 Invoking: GCC C++ Compiler
 g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Client.d" -MT"src/Client.o" -o "src/Client.o" "../src/Client.cpp"
-../src/Client.cpp: In member function ‘bool Client::operator==(const Client&)’:
-../src/Client.cpp:53:1: warning: no return statement in function returning non-void [-Wreturn-type]
- }
- ^
-../src/Client.cpp: In member function ‘bool Client::operator<(const Client&)’:
-../src/Client.cpp:56:1: warning: no return statement in function returning non-void [-Wreturn-type]
- }
- ^
 Finished building: ../src/Client.cpp
+ 
+Building file: ../src/Date.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Date.d" -MT"src/Date.o" -o "src/Date.o" "../src/Date.cpp"
+Finished building: ../src/Date.cpp
+ 
+Building file: ../src/tp2.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tp2.d" -MT"src/tp2.o" -o "src/tp2.o" "../src/tp2.cpp"
+Finished building: ../src/tp2.cpp
+ 
+Building file: ../src/validationFormat.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/validationFormat.d" -MT"src/validationFormat.o" -o "src/validationFormat.o" "../src/validationFormat.cpp"
+Finished building: ../src/validationFormat.cpp
+ 
+Building target: tp2
+Invoking: GCC C++ Linker
+g++  -o "tp2"  ./src/Client.o ./src/Date.o ./src/tp2.o ./src/validationFormat.o   
+./src/validationFormat.o : Dans la fonction « std::char_traits<char>::compare(char const*, char const*, unsigned int) » :
+/home/etudiant/Bureau/TP2/tp2/Debug/../src/validationFormat.cpp:17 : définitions multiples de « util::validerFormatNom(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) »
+./src/tp2.o:/home/etudiant/Bureau/TP2/tp2/Debug/../src/validationFormat.cpp:17 : défini pour la première fois ici
+./src/validationFormat.o : Dans la fonction « util::validerTelephone(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) » :
+/home/etudiant/Bureau/TP2/tp2/Debug/../src/validationFormat.cpp:32 : définitions multiples de « util::validerTelephone(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) »
+./src/tp2.o:/home/etudiant/Bureau/TP2/tp2/Debug/../src/validationFormat.cpp:32 : défini pour la première fois ici
+./src/validationFormat.o : Dans la fonction « util::validerFormatFichier(std::istream&) » :
+makefile:45 : la recette pour la cible « tp2 » a échouée
+/home/etudiant/Bureau/TP2/tp2/Debug/../src/validationFormat.cpp:70 : définitions multiples de « util::validerFormatFichier(std::istream&) »
+./src/tp2.o:/home/etudiant/Bureau/TP2/tp2/Debug/../src/validationFormat.cpp:70 : défini pour la première fois ici
+collect2: error: ld returned 1 exit status
+make: *** [tp2] Erreur 1
+19:58:32 **** Incremental Build of configuration Debug for project tp2 ****
+make all 
+Building file: ../src/tp2.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tp2.d" -MT"src/tp2.o" -o "src/tp2.o" "../src/tp2.cpp"
+Finished building: ../src/tp2.cpp
  
 Building target: tp2
 Invoking: GCC C++ Linker
 g++  -o "tp2"  ./src/Client.o ./src/Date.o ./src/tp2.o ./src/validationFormat.o   
 Finished building target: tp2
  
-17:33:20 **** Incremental Build of configuration Debug for project tp2 ****
+19:58:53 **** Incremental Build of configuration Debug for project tp2 ****
 make all 
-make: rien à faire pour « all ».
-17:59:04 **** Incremental Build of configuration Debug for project tp2 ****
-make all 
-Building file: ../src/Client.cpp
+Building file: ../src/tp2.cpp
 Invoking: GCC C++ Compiler
-g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Client.d" -MT"src/Client.o" -o "src/Client.o" "../src/Client.cpp"
-../src/Client.cpp:59:6: error: prototype for ‘bool Client::operator<(const Client&)’ does not match any in class ‘Client’
- bool Client::operator <(const Client& p_client) {
-      ^
-In file included from ../src/Client.cpp:8:0:
-../src/Client.h:34:7: error: candidate is: bool Client::operator<(const Client&) const
-  bool operator<(const Client& p_client) const;
-       ^
-src/subdir.mk:27 : la recette pour la cible « src/Client.o » a échouée
-make: *** [src/Client.o] Erreur 1
-17:59:21 **** Incremental Build of configuration Debug for project tp2 ****
-make all 
-Building file: ../src/Client.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Client.d" -MT"src/Client.o" -o "src/Client.o" "../src/Client.cpp"
-../src/Client.cpp: In member function ‘bool Client::operator<(const Client&) const’:
-../src/Client.cpp:60:1: warning: no return statement in function returning non-void [-Wreturn-type]
- }
- ^
-Finished building: ../src/Client.cpp
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tp2.d" -MT"src/tp2.o" -o "src/tp2.o" "../src/tp2.cpp"
+Finished building: ../src/tp2.cpp
  
+Building target: tp2
+Invoking: GCC C++ Linker
+g++  -o "tp2"  ./src/Client.o ./src/Date.o ./src/tp2.o ./src/validationFormat.o   
+Finished building target: tp2
+ 
+20:08:43 **** Incremental Build of configuration Debug for project tp2 ****
+make all 
+Building file: ../src/tp2.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tp2.d" -MT"src/tp2.o" -o "src/tp2.o" "../src/tp2.cpp"
+Finished building: ../src/tp2.cpp
+ 
+Building target: tp2
+Invoking: GCC C++ Linker
+g++  -o "tp2"  ./src/Client.o ./src/Date.o ./src/tp2.o ./src/validationFormat.o   
+Finished building target: tp2
+ 
+20:09:48 **** Incremental Build of configuration Debug for project tp2 ****
+make all 
+Building file: ../src/tp2.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tp2.d" -MT"src/tp2.o" -o "src/tp2.o" "../src/tp2.cpp"
+Finished building: ../src/tp2.cpp
+ 
+Building target: tp2
+Invoking: GCC C++ Linker
+g++  -o "tp2"  ./src/Client.o ./src/Date.o ./src/tp2.o ./src/validationFormat.o   
+Finished building target: tp2
+ 
+20:28:51 **** Incremental Build of configuration Debug for project tp2 ****
+make all 
 Building file: ../src/tp2.cpp
 Invoking: GCC C++ Compiler
 g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tp2.d" -MT"src/tp2.o" -o "src/tp2.o" "../src/tp2.cpp"

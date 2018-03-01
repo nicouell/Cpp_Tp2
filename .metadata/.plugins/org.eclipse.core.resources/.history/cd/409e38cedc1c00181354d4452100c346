@@ -57,5 +57,4 @@ bool Client::operator ==(const Client& p_client) const {
 }
 
 bool Client::operator <(const Client& p_client) const{
-	return m_noFolio < p_client.m_noFolio;
 }

@@ -1,14 +1,5 @@
-17:59:21 **** Incremental Build of configuration Debug for project tp2 ****
+20:28:51 **** Incremental Build of configuration Debug for project tp2 ****
 make all 
-Building file: ../src/Client.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Client.d" -MT"src/Client.o" -o "src/Client.o" "../src/Client.cpp"
-../src/Client.cpp: In member function ‘bool Client::operator<(const Client&) const’:
-../src/Client.cpp:60:1: warning: no return statement in function returning non-void [-Wreturn-type]
- }
- ^
-Finished building: ../src/Client.cpp
- 
 Building file: ../src/tp2.cpp
 Invoking: GCC C++ Compiler
 g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tp2.d" -MT"src/tp2.o" -o "src/tp2.o" "../src/tp2.cpp"
@@ -20,5 +11,5 @@ g++  -o "tp2"  ./src/Client.o ./src/Date.o ./src/tp2.o ./src/validationFormat.o
 Finished building target: tp2
  
 
-17:59:21 Build Finished (took 529ms)
+20:28:51 Build Finished (took 368ms)
 

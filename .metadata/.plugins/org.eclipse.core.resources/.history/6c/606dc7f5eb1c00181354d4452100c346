@@ -25,7 +25,6 @@ int main() {
 	string telephone;
 
 
-	cout << endl;
 	while(!validation){
 		cout << "Entrez le numero de folio du client [1000, 10000[" << endl;
 		cin >> noFolio;
@@ -39,7 +38,6 @@ int main() {
 
 	validation = false;
 
-	cout << endl;
 	getline(cin, prenom);
 	while(!validation){
 		cout << "Entrez le prénom: " << endl;
@@ -52,55 +50,8 @@ int main() {
 		}
 	}
 
-	validation = false;
-
-	cout << endl;
-	while(!validation){
-			cout << "Entrez le nom: " << endl;
-		getline(cin, nom);
-		if(validerFormatNom(nom)){
-			validation = true;
-		}
-		else{
-			cout << "Le nom n'est pas valide";
-		}
-	}
-
-	validation = false;
-
-	cout << endl;
-	while(!validation){
-			cout << "Entrez le numero de telephone XXX CCC-CCCC: " << endl;
-		getline(cin, telephone);
-		if(validerTelephone(telephone)){
-			validation = true;
-		}
-		else{
-			cout << "Le numéro de téléphone n'est pas valide";
-		}
-	}
-
-	cout << endl;
-
-	cout << "Fichier client" << endl;
-	cout << "-----------------------------------";
-
-	Client nicola(noFolio, prenom, nom, telephone);
+	Client nicola(1234, "Joe", "Blo", "418 656-2131");
 	cout << nicola.reqClientFormate() << endl;
-
-	cout << endl;
-	cout << "Le numéro de téléphone n'est pas valide";
-	getline(cin, telephone);
-
-	cout << "Fichier client" << endl;
-	cout << "-----------------------------------" << endl;
-
-	nicola.asgTelephone(telephone);
-	cout << nicola.reqClientFormate() << endl;
-
-	cout << endl;
-
-	cout << "Fin du programme!";
 
 	return 0;
 }
