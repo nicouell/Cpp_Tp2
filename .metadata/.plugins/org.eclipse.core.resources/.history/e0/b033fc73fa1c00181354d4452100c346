@@ -12,7 +12,6 @@
 #ifndef CLIENT_H_
 #define CLIENT_H_
 
-namespace banque{
 
 class Client {
 public:
@@ -43,6 +42,5 @@ private:
 	std::string m_telephone;
 	util::Date m_dateOuverture;
 };
-} //namespace
 
 #endif /* CLIENT_H_ */

@@ -84,18 +84,24 @@ int main() {
 	cout << endl;
 
 	cout << "Fichier client" << endl;
-	cout << "-----------------------------------" << endl;
+	cout << "-----------------------------------";
 
 	Client nicola(noFolio, prenom, nom, telephone);
 	cout << nicola.reqClientFormate() << endl;
 
-	validation = false;
+	cout << endl;
+	cout << "Le numéro de téléphone n'est pas valide";
+	getline(cin, telephone);
+
+	cout << "Fichier client" << endl;
+	cout << "-----------------------------------" << endl;
+
+	validation = true;
 
 	while(!validation){
-			cout << "Entrez un nouveau numero de telephone XXX CCC-CCCC: " << endl;
+			cout << "Entrez le numero de telephone XXX CCC-CCCC: " << endl;
 		getline(cin, telephone);
 		if(validerTelephone(telephone)){
-			nicola.asgTelephone(telephone);
 			validation = true;
 		}
 		else{

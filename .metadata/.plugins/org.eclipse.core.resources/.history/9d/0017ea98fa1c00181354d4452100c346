@@ -10,7 +10,6 @@
 #include <sstream>
 
 using namespace std;
-namespace banque{
 
 Client::Client(int p_noFolio, const std::string& p_nom,
 		const std::string& p_prenom, const std::string& p_telephone):m_noFolio(p_noFolio), m_nom(p_nom), m_prenom(p_prenom), m_telephone(p_telephone)
@@ -59,5 +58,4 @@ bool Client::operator ==(const Client& p_client) const {
 
 bool Client::operator <(const Client& p_client) const{
 	return m_noFolio < p_client.m_noFolio;
-}
 }
