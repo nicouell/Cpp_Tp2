@@ -54,6 +54,12 @@ std::string Client::reqTelephone() const {
 	return m_telephone;
 }
 
+/**
+ * \brief Assigne un numéro de téléphone à l'objet courant
+ * \param[in] p_telephone est une chaine de carachtère string qui représente le numéro de téléphone du client.
+ */
+
+
 void Client::asgTelephone(std::string& p_telephone) {
 	m_telephone = p_telephone;
 }
